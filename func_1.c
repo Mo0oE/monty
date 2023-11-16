@@ -42,8 +42,8 @@ void print_stack(stack_t **stack, unsigned int line)
 
 	if (stack == NULL)
 	{
-		exit(EXIT_FAILURE);
 		free_all_node();
+		exit(EXIT_FAILURE);
 	}
 
 	head = *stack;
